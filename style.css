@@ -12,8 +12,8 @@ body{
   font-family:Segoe UI, Arial, sans-serif;
   color:var(--text);
   background:var(--light);
-  background-image: repeating-linear-gradient(135deg, #f0f0f0, #f0f0f0 22px, #e6e6e6 22px, #e6e6e6 44px);
-  -webkit-font-smoothing:antialiased;
+  /*background-image: repeating-linear-gradient(135deg, #f0f0f0, #f0f0f0 22px, #e6e6e6 22px, #e6e6e6 44px);
+  */-webkit-font-smoothing:antialiased;
   scroll-behavior:smooth;
 }
 
