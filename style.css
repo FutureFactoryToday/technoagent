@@ -5,6 +5,7 @@
   --light:#f5f6f8;
   --panel:#ffffff;
   --text:#111;
+  --gray: #474242
 }
 
 body{
@@ -37,13 +38,13 @@ body{
 .mobile-menu.open {display:flex;}
 
 /* Search under header */
-.search-bar{background:var(--blue);padding:14px 0;text-align:center;}
+.search-bar{background:var(--gray);padding:14px 0;text-align:center;}
 .search-form{display:inline-flex;align-items:center;gap:8px;}
 .search-input{padding:8px 10px;border-radius:50px;border:none;width:420px;max-width:80%;}
-.search-button{background:var(--blue-dark);color:#fff;border:none;border-radius:50%;padding:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;}
+.search-button{background:var(--gray);color:#474242;border:none;border-radius:50%;padding:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;}
 
 /* Breadcrumbs */
-.breadcrumbs{background:#e9ecef;padding:0.65rem 2rem;font-size:0.95rem;}
+.breadcrumbs{background:#f5f6f8;padding:0.65rem 2rem;font-size:0.95rem;}
 .breadcrumbs a{color:var(--blue);text-decoration:none;}
 
 /* Content */
