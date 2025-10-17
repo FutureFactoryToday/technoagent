@@ -18,6 +18,15 @@ body{
   scroll-behavior:smooth;
 }
 
+.icon {
+  display: block;
+  width: 23px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .container{max-width:1100px;margin:0 auto;padding:0 2rem;}
 
 /* Header */
