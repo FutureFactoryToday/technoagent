@@ -5,7 +5,7 @@
   --light:#f5f6f8;
   --panel:#ffffff;
   --text:#111;
-  --gray: #474242
+  --gray: #474747
 }
 
 body{
@@ -27,6 +27,10 @@ p{text-indent:25px;}
   background-position: center;
   background-size: contain;
 }
+
+/* Logo */
+.logo img {max-width: 100%;object-fit: contain;/* Добавьте переход, если планируете делать эффект при наведении */transition: opacity 0.3s ease;}
+.logo a:hover img {opacity: 0.8;}
 
 .container{max-width:1100px;margin:0 auto;padding:0 2rem;}
 /* Header */
@@ -67,14 +71,83 @@ h1,h2{color:var(--blue);margin:0 0 .6rem 0;}
 .card p{flex:1;margin:0;color:#333;}
 .card .flat-btn{background:var(--blue);color:#fff;border:none;padding:10px 12px;border-radius:6px;text-decoration:none;text-align:center;display:inline-block;cursor:pointer;}
 
+/* FAQ */
+.forum-style-faq {
+  border-top: 1px solid #eee; /* Верхняя граница всего блока */
+  margin-top: 20px;
+}
+
+.faq-thread {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee; /* Тонкая разделительная полоса */
+}
+
+.faq-question {
+  font-weight: 600;
+  color: #2c3e50;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.faq-answer {
+  display: flex;
+  gap: 10px;
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.faq-icon {
+  font-family: Segoe UI, Arial, sans-serif;
+  color: var(--blue); /* Акцентный цвет для иконок Q и A */
+  font-weight: bold;
+  min-width: 100px;
+}
+
+/* Эффект при наведении как на форумах */
+.faq-thread:hover {
+  background-color: #f9f9f9;
+  transition: background 0.3s ease;
+}
+
+
+
 /* Contacts form */
-.contacts{background:var(--blue);color:#fff;padding:2rem;border-radius:10px;text-align:center;}
+.contacts{background:var(--blue);color:#fff;padding:2rem;border-radius:2px;text-align:center;}
 .contact-form{display:flex;flex-direction:column;gap:10px;max-width:560px;margin:0.8rem auto 0;align-items:stretch;}
-.contact-form input,.contact-form textarea{padding:10px;border-radius:8px;border:none;}
+.contact-form input,.contact-form textarea{padding:10px;border-radius:2px;border:none;}
 .contact-form button{background:var(--blue);color:#fff;padding:10px;border-radius:6px;border:none;cursor:pointer;align-self:center;}
+.contact-form textarea {
+  min-height: 60px; /* Минимальная высота */
+  resize: none;      /* Отключает ручное изменение размера пользователем */
+}
 
 /* Footer */
-.footer{background:var(--blue-dark);color:#fff;padding:1rem 0;text-align:center;font-size:0.9rem; position:sticky; bottom:0;}
+.footer{background:var(--gray);color:#fff;padding:1rem 0;text-align:center;font-size:0.9rem; position:sticky; bottom:0;}
+
+/* Banner */
+.contact-banner {
+  background: var(--gray);
+  color: white;
+  padding: 30px;
+  border-radius: 2px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.contact-item {
+  flex: 1;
+  min-width: 200px;
+}
+
+.contact-item h3 {
+  color: #3498db;
+  margin-bottom: 10px;
+}
 
 /* Reveal */
 .reveal{opacity:0;transform:translateY(24px);transition:all .8s ease;}

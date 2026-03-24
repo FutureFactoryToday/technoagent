@@ -46,4 +46,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
   }
 
+const textarea = document.querySelector('.contact-form textarea');
+
+if (textarea) {
+  textarea.addEventListener('input', function() {
+    this.style.height = 'auto'; // Сбрасываем высоту
+    this.style.height = this.scrollHeight + 'px'; // Устанавливаем высоту равную контенту
+  });
+}
+
 });
