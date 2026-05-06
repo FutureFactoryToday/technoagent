@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Система MQL | ТЕХ-АГ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <div class="logo">
+        <a href="index.html">
+          <img src="tech-ag-logo.png" alt="ТЕХ-АГ" style="display: block; height: 40px; width: auto;">
+        </a>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html#about" data-i18n="about">О нас</a>
+      <a href="products.html" data-i18n="products" class="active">Продукты</a>
+      <a href="solutions.html" data-i18n="solutions">Наши решения</a>
+      <a href="faq.html#faq" data-i18n="faq">FAQ</a>
+      <a href="contacts.html#contacts" data-i18n="contacts">Контакты</a>
+    </nav>
+    <button id="langBtn" class="icon-btn" title="Toggle language" style="color:white;">
+      <img class="icon" src="changeLanguage-icon.svg" alt="lang">   
+    </button>
+  </div>
+</header>
+
+<div class="search-bar">
+  <form id="searchForm" class="search-form">
+    <input id="searchInput" class="search-input" placeholder="Поиск..." aria-label="search">
+    <button class="search-button" aria-label="search">
+      <img class="icon" src="search-icon.svg" alt="search">
+    </button>
+  </form>
+</div>
+
+<div class="breadcrumbs">
+  <a href="index.html" class='bc-home'>Главная</a> / 
+  <a href="products.html">Продукты</a> / 
+  <span>Система MQL</span>
+</div>
+
+<main class="container">
+  <div class="product-grid reveal">
+    <!-- Левая колонка: Изображение -->
+    <div class="product-image">
+      <img src="mql-pic1.PNG" alt="Компактный фрезерный станок Т-100">
+      <img src="mql-pic2.PNG" alt="Компактный фрезерный станок Т-100">
+    </div>
+
+    <!-- Правая колонка: Инфо -->
+    <div class="product-info">
+      <h1 data-i18n="prod_name">Система MQL</h1>
+      <p class="description">
+        Технология смазки минимальным количеством охлаждающей жидкости.
+      </p>
+      
+      <div class="price">от 270 000 ₽</div>
+
+      <table class="specs">
+        <tr>
+          <td>Герметичность</td>
+          <td>Безопасность</td>
+        </tr>
+        <tr>
+          <td>Plug&Play</td>
+          <td>Интеграция</td>
+        </tr>
+        <tr>
+          <td>Рабочее давление</td>
+          <td>2...8 атм.</td>
+        </tr>
+        <tr>
+          <td>Система управления</td>
+          <td>ТЕХ-АГ Smart Control</td>
+        </tr>
+      </table>
+
+      <button class="search-button" style="width: 100%; padding: 15px; border-radius: 5px;">
+        Заказать консультацию
+      </button>
+    </div>
+  </div>
+
+  <section id="details" class="reveal" style="margin-top: 50px;">
+    <h2>Подробное описание</h2>
+    <p>MQL - Пневматическая система, принцип действия которой основан на подачи охлаждающей жидкости в смесительную камеру с последующим формированием аэрозоля и его распылением непосредственно в зону резания. В качестве охлаждающей жидкости используется изопропанол. В качестве транспорта используется сжатый воздух от 2 до 8 атмосфер. Конструкция форсунки подаёт аэрозоль непосредственно на режущие кромки инструмента, уменьшая общий расход и максимально эффективно отводя тепло из зоны резания. Гибкая система обеспечивает подвод форсунки в самые труднодоступные места. Длина и форма гибкого модуля может быть кастомизирована по требованию заказчика. </p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 ТЕХ-АГ — Все права защищены.</p>
+  <p>+7-993-620-12-44</p>
+  <p>tech-ag@mail.ru</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
